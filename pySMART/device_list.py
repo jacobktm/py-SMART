@@ -130,8 +130,8 @@ class DeviceList(object):
                         logging.exception(f"Error parsing device {name}")
 
                     else:
-                        # Reraise the exception
-                        raise e
+                        # continue scanning
+                        pass
 
         # Remove duplicates and unwanted devices (optical, etc.) from the list
         self._cleanup()
